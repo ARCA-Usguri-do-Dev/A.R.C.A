@@ -48,3 +48,23 @@ body {
   transition: transform 0.3s ease;
   padding: 6px 0;
 }
+/* Sublinhado */
+.nav-bar a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1e88e5;
+    transition: width 0.3s ease;
+  }
+  
+  /* Hover: cresce visualmente com scale */
+  .nav-bar a:hover {
+    transform: scale(1.15); /* Cresce tudo (inclusive letra) */
+  }
+  
+  .nav-bar a:hover::after {
+    width: 100%;
+  }
