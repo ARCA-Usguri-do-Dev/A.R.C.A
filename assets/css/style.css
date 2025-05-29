@@ -133,7 +133,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 32px;
+    padding: 75px 32px;
   }
 
   .logo {
@@ -157,8 +157,12 @@ header {
     justify-content: flex-end;
   }
 
+  .nav-bar a{
+    font-size: 26px;
+  }
+
   .nav-bar ul {
-    gap: 20px;
+    gap: 45px;
   }
 
   .logo img {
