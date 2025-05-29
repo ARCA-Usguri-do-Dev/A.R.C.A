@@ -126,3 +126,42 @@ header {
   text-decoration: none;
   color: #1e3a5f;
 }
+@media (min-width: 600px) {
+  header {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+  }
+
+  .logo {
+    order: 2; /* logo no centro visual */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile {
+    order: 1; /* primeiro à esquerda */
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .nav-bar {
+    order: 3; /* último à direita */
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-bar ul {
+    gap: 20px;
+  }
+
+  .logo img {
+    max-height: 90px;
+  }
+}
