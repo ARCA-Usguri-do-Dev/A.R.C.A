@@ -1,6 +1,6 @@
 main {
     margin-left: 0;
-    padding: 160px 20px 40px;
+    padding: 200px 20px 40px;
     width: 100%;
     flex: 1;
   }
@@ -23,15 +23,17 @@ main {
     background-color: #f0f9ff;
     padding: 20px;
     border-radius: 12px;
-    max-width: 100%;
+    max-width: 80%;
     margin: auto;
     box-shadow: 0 4px 8px rgba(30, 136, 229, 0.15);
     box-sizing: border-box;
   }
 
-  .contato-section {
-    margin-top: 20px;
-  }
+.faq-section {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
   
   .contato {
     margin-bottom: 16px;

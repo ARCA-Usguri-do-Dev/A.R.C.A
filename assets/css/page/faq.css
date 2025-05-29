@@ -1,6 +1,6 @@
 main {
   margin-left: 0;
-  padding: 160px 20px 40px;
+  padding: 200px 20px 40px;
   width: 100%;
   flex: 1;
 }
@@ -23,7 +23,7 @@ main {
   background-color: #f0f9ff; /* Fundo azul clarinho */
   padding: 20px;
   border-radius: 10px;
-  max-width: 100%;
+  max-width: 80%;
   margin: auto;
   box-shadow: 0 2px 6px rgba(30, 136, 229, 0.15);
   box-sizing: border-box;
@@ -31,8 +31,11 @@ main {
 }
 
 .faq-section {
-  margin-top: 20px;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
 }
+
 
 .faq {
   margin-bottom: 16px;
