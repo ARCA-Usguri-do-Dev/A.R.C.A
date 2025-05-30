@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const alvo = document.getElementById(idAlvo);
       if (alvo) {
         alvo.classList.add("visivel");
-        alvo.scrollIntoView({ behavior: "smooth" });
       }
     });
   });
