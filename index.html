@@ -9,11 +9,21 @@
     <link rel="stylesheet" href="assets/css/page/index.css">
 
     <title>Pagina inicial A.R.C.A</title>
-    <script defer src="assets/js/index.js"></script>
+    <script src="assets/js/index.js"></script>
 </head>
 
 <body>
     <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/img/icones/arca.png" alt="Logo A.R.C.A" />
+            </a>
+        </div>
+
+        <div class="profile">
+            <h2>Olá, <span id="nome-usuario">visitante</span>!</h2>
+        </div>
+
         <nav class="nav-bar">
             <ul>
                 <li><a href="assets/integrantes/integrantes.html">Integrantes</a></li>
@@ -21,12 +31,50 @@
                 <li><a href="assets/faq/faq.html">FAQ</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
-        <div class="profile">
-            <h2>Olá, <span id="nome-usuario">visitante</span>!</h2>
+        <div class="container">
+            <h3 class="home-title">Bem-vindo à A.R.C.A.</h3>
+            <p class="home-description">
+                A.R.C.A. (Alerta de Risco Climático e Apoio) é um aplicativo inteligente que oferece suporte preventivo
+                e emergencial em situações climáticas extremas como chuvas intensas, enchentes, ventos fortes e ondas de
+                calor. Nossa missão é proteger vidas com informação, orientação e ação rápida.
+            </p>
         </div>
+
+        <section class="alerta-section">
+            <h3 class="alerta-title">A importância de estar preparado</h3>
+            <p class="alerta-description">
+                Mudanças climáticas e eventos extremos estão se tornando parte da nossa realidade. Muitas vezes, os
+                riscos não dão aviso prévio. Por isso, cultivar o hábito de se informar, planejar rotas seguras,
+                conhecer os sinais de alerta e saber como agir é uma atitude que pode salvar vidas.
+                <br><br>
+                Estar preparado não é exagero — é responsabilidade. Cada ação preventiva é um passo rumo a uma
+                comunidade mais segura, consciente e resiliente.
+            </p>
+        </section>]
+
+        <section class="info-cards">
+            <div class="card" data-alvo="chuva-intensa">
+                <img src="./assets/img/desastres/chuva-forte.png" alt="Chuva intensa">
+                <p>Chuva intensa</p>
+            </div>
+            <div class="card" data-alvo="enchente">
+                <img src="./assets/img/desastres/enchente.png" alt="Enchentes">
+                <p>Enchentes</p>
+            </div>
+            <div class="card" data-alvo="ventos-fortes">
+                <img src="./assets/img/desastres/ventos-fortes.png" alt="Ventos fortes">
+                <p>Ventos fortes</p>
+            </div>
+            <div class="card" data-alvo="calor-extremo">
+                <img src="./assets/img/desastres/calor-extremo.png" alt="Calor extremo">
+                <p>Calor extremo</p>
+            </div>
+        </section>
+
     </main>
 
     <footer>
