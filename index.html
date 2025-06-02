@@ -625,11 +625,58 @@
             </div>
         </section>
     </main>
+    <div class="overlay" id="tela-autenticacao">
+        <div class="box">
+            <div class="tabs">
+                <button id="btn-login">Login</button>
+                <button id="btn-cadastro">Cadastro</button>
+            </div>
 
-    <footer>
-        <p>
-            &copy; 2025 A.R.C.A. Todos os direitos reservados.
-        </p>
+
+            <form id="form-login" class="formulario">
+                <input type="text" id="login-usuario" placeholder="Usuário" required />
+                <input type="password" id="login-senha" placeholder="Senha" required />
+                <button type="submit">Entrar</button>
+            </form>
+
+            <form id="form-cadastro" class="formulario hidden">
+                <input type="text" id="cad-nome" placeholder="Nome completo" required />
+
+                <input type="text" id="cad-cpf" placeholder="CPF" required />
+                <span class="erro" id="erro-cpf"></span>
+
+                <input type="email" id="cad-email" placeholder="E-mail" />
+                <span class="erro" id="erro-email"></span>
+
+                <input type="date" id="cad-nascimento" required />
+
+                <input type="text" id="cad-usuario" placeholder="Usuário" required />
+
+                <input type="password" id="cad-senha" placeholder="Senha" required />
+                <small class="senha-dica">Use pelo menos 8 caracteres com letra maiúscula, minúscula, número e
+                    símbolo.</small>
+
+                <input type="password" id="cad-senhaconf" placeholder="Confirme sua Senha" required />
+                <span class="erro" id="erro-senha"></span>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+
+
+            <button id="btn-anonimo" class="btn-anonimo">Entrar como Visitante</button>
+
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 A.R.C.A . Todos os direitos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="assets/contatos/contatos.html">Contato</a></li>
+                <li><a href="assets/faq/faq.html">FAQ</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 
