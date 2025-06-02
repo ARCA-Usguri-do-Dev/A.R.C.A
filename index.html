@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+ <header>
         <div class="logo">
             <a href="index.html">
                 <img src="assets/img/icones/arca.png" alt="Logo A.R.C.A" />
@@ -21,8 +21,13 @@
         </div>
 
         <div class="profile">
-            <h2>Olá, <span id="nome-usuario">visitante</span>!</h2>
+            <h2>Olá, <span id="nome-usuario">Visitante</span>!</h2>
+            <div class="logout-wrapper">
+                <button id="btn-logout" class="btn-logout">Sair</button>
+            </div>
         </div>
+
+
 
         <nav class="nav-bar">
             <ul>
@@ -39,7 +44,7 @@
             <h3 class="home-title">Bem-vindo à A.R.C.A.</h3>
             <p class="home-description">
                 A.R.C.A. (Alerta de Risco Climático e Apoio) é um aplicativo inteligente que oferece suporte preventivo
-                e emergencial em situações climáticas extremas como chuvas intensas, enchentes, ventos fortes e ondas de
+                e emergencial em situações climáticas extremas como alagamentos, enchentes, ventos fortes e ondas de
                 calor. Nossa missão é proteger vidas com informação, orientação e ação rápida.
             </p>
         </div>
@@ -53,26 +58,33 @@
                 <br><br>
                 Estar preparado não é exagero — é responsabilidade. Cada ação preventiva é um passo rumo a uma
                 comunidade mais segura, consciente e resiliente.
+                <br><br>
+                Para saber mais sobre como se proteger em diferentes situações, clique nos cards abaixo.
+                Eles contêm orientações específicas sobre desastres como alagamentos, enchentes, ventos fortes e calor
+                extremo.
             </p>
         </section>
 
         <section class="info-cards">
-            <div class="card" data-alvo="chuva-intensa">
-                <img src="./assets/img/desastres/chuva-forte.png" alt="Chuva intensa">
-                <p>Chuva intensa</p>
-            </div>
-            <div class="card" data-alvo="enchente">
+            <figure class="card" data-alvo="alagamento">
+                <img src="./assets/img/desastres/alagamento.png" alt="Alagamentos">
+                <figcaption>Alagamento</figcaption>
+            </figure>
+
+            <figure class="card" data-alvo="enchente">
                 <img src="./assets/img/desastres/enchente.png" alt="Enchentes">
-                <p>Enchentes</p>
-            </div>
-            <div class="card" data-alvo="ventos-fortes">
+                <figcaption>Enchente</figcaption>
+            </figure>
+
+            <figure class="card" data-alvo="ventos-fortes">
                 <img src="./assets/img/desastres/ventos-fortes.png" alt="Ventos fortes">
-                <p>Ventos fortes</p>
-            </div>
-            <div class="card" data-alvo="calor-extremo">
+                <figcaption>Ventos fortes</figcaption>
+            </figure>
+
+            <figure class="card" data-alvo="calor-extremo">
                 <img src="./assets/img/desastres/calor-extremo.png" alt="Calor extremo">
-                <p>Calor extremo</p>
-            </div>
+                <figcaption>Calor extremo</figcaption>
+            </figure>
         </section>
 
         <section id="chuva-intensa" class="detalhe-desastre oculto">
