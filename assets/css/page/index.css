@@ -218,3 +218,76 @@ main {
 .btn-fechar:hover {
   background-color: #0d47a1;
 }
+.card-conteudo {
+  background-color: #eaf6ff;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: #0d355f;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.card-conteudo h2 {
+  font-size: 26px;
+  color: #0d47a1;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-conteudo h3 {
+  background-color: #BBDEFB;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 20px;
+  color: #1e3a5f;
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.card-conteudo strong {
+  font-size: 17px;
+  margin-top: 20px;
+  display: block;
+  color: #0d47a1;
+}
+
+.card-conteudo ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 24px;
+}
+
+.card-conteudo ul li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+}
+
+.card-conteudo ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #1565c0;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* Ícones ao lado do título */
+.icone-titulo {
+  width: 28px;
+  height: 28px;
+  margin-right: 12px;
+}
+
+/* Parágrafos principais */
+.card-conteudo p {
+  margin-bottom: 12px;
+  text-align: justify;
+}
