@@ -2,11 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".card");
   const secoes = document.querySelectorAll(".detalhe-desastre");
 
-  // Mostrar a seção correspondente ao card clicado
   cards.forEach(card => {
     card.addEventListener("click", (event) => {
-      event.stopPropagation(); // Impede o clique de subir
-
+      event.stopPropagation();
       const idAlvo = card.getAttribute("data-alvo");
 
       secoes.forEach(sec => {
@@ -18,24 +16,31 @@ document.addEventListener("DOMContentLoaded", () => {
       if (alvo) {
         alvo.classList.remove("oculto");
         alvo.classList.add("visivel");
-        alvo.scrollIntoView({ behavior: "smooth" });
+
+        // ⏱️ Espera para garantir que a classe 'visivel' foi aplicada
+setTimeout(() => {
+  const conteudo = alvo.querySelector(".card-conteudo");
+  if (conteudo) {
+    conteudo.scrollTo({ top: 0, behavior: "smooth" });
+  }
+}, 50);
       }
     });
   });
 
-  // Botão "Fechar"
+  // Fechar com botão
   const botoesFechar = document.querySelectorAll(".btn-fechar");
   botoesFechar.forEach(botao => {
     botao.addEventListener("click", (event) => {
-      event.stopPropagation(); // Evita conflito com o click fora
+      event.stopPropagation();
       const secao = botao.closest(".detalhe-desastre");
       secao.classList.remove("visivel");
       secao.classList.add("oculto");
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
   });
 
-  // Clicar fora da seção visível fecha ela
-  // Fechar a seção se clicar fora do conteúdo (card-conteudo)
+  // Fechar clicando fora da área
   document.addEventListener("click", (event) => {
     secoes.forEach(secao => {
       if (secao.classList.contains("visivel")) {
@@ -43,6 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!conteudo.contains(event.target)) {
           secao.classList.remove("visivel");
           secao.classList.add("oculto");
+          window.scrollTo({ top: 0, behavior: "smooth" });
         }
       }
     });
