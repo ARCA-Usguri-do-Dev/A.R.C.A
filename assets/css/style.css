@@ -6,7 +6,7 @@ body {
   align-items: center;
   text-align: center;
   font-weight: 550;
-  font-family: "Atkinson Hyperlegible", "Source Sans Pro", "Roboto", Arial, sans-serif;
+  font-family: "Bangers", system-ui, "Roboto", Arial, sans-serif;
   background: linear-gradient(to bottom, #83a4d4, #87ceeb);
   margin: 0;
 }
