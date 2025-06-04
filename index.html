@@ -9,16 +9,15 @@
     <link rel="stylesheet" href="assets/css/page/index.css" />
 
     <title>Pagina inicial A.R.C.A</title>
-    <script src="assets/js/index.js"></script>
+    <script defer src="assets/js/index.js"></script>
     <script defer src="assets/js/login.js"></script>
+    <script defer src="assets/js/bot.js"></script>
   </head>
 
   <body>
     <header>
       <div class="logo">
-        <a href="index.html">
           <img src="assets/img/icones/arca.png" alt="Logo A.R.C.A" />
-        </a>
       </div>
 
       <div class="profile">
@@ -835,6 +834,7 @@
           <button class="btn-fechar">Fechar</button>
         </div>
       </section>
+      <div id="mensagem-feedback" class="mensagem oculto"></div>
     </main>
 
     <div class="overlay" id="tela-autenticacao">
@@ -848,7 +848,7 @@
           <input
             type="text"
             id="login-usuario"
-            placeholder="Usuário"
+            placeholder="Nome"
             required
           />
           <input
@@ -864,19 +864,14 @@
           <input
             type="text"
             id="cad-nome"
-            placeholder="Nome completo"
+            placeholder="Nome"
             required
           />
 
-          <input type="text" id="cad-cpf" placeholder="CPF" required />
-          <span class="erro" id="erro-cpf"></span>
-
-          <input type="email" id="cad-email" placeholder="E-mail" />
+          <input type="email" id="cad-email" placeholder="E-mail (opcional)" />
           <span class="erro" id="erro-email"></span>
 
           <input type="date" id="cad-nascimento" required />
-
-          <input type="text" id="cad-usuario" placeholder="Usuário" required />
 
           <input type="password" id="cad-senha" placeholder="Senha" required />
           <small class="senha-dica"

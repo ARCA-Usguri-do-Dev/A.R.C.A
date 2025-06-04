@@ -7,27 +7,32 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/page/faq.css">
-    <title>Document</title>
 
+   <title>Pagina faq A.R.C.A</title>
     <script defer src="../js/faq.js"></script>
+    <script defer src="../js/logout.js"></script>
+    <script defer src="../js/bot.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="profile">
-            <h2>Olá, <span id="nome-usuario">Visitante</span>!</h2>
+      <div class="logo">
+          <img src="../img/icones/arca.png" alt="Logo A.R.C.A" />
+      </div>
+
+      <div class="profile">
+        <h2>Olá, <span id="nome-usuario">Visitante</span>!</h2>
+        <div class="logout-wrapper">
+          <button id="btn-logout" class="btn-logout">Sair</button>
         </div>
-        <div class="logo">
-            <a href="../../index.html">
-                <img src="../img/icones/arca.png" alt="Logo A.R.C.A" />
-            </a>
-        </div>
+      </div>
 
         <nav class="nav-bar">
             <ul>
                 <li><a href="../../index.html">Página Inicial</a></li>
                 <li><a href="../integrantes/integrantes.html">Integrantes</a></li>
                 <li><a href="../contato/contato.html">Contatos</a></li>
+                <li><a href="../solucao/solucao.html">Solução</a></li>
             </ul>
         </nav>
     </header>
@@ -102,7 +107,6 @@
         </div>
 
     </main>
-
     <footer class="footer">
         <div class="footer-container">
             <p>&copy; 2025 A.R.C.A . Todos os direitos reservados.</p>
@@ -113,4 +117,5 @@
         </div>
     </footer>
 </body>
+
 </html>

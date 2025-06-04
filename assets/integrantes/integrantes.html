@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">    
     <link rel="stylesheet" href="../css/page/integrantes.css">
@@ -16,22 +11,29 @@
     <title>Integrantes</title>
 
     <script defer src="../js/integrandes.js"></script>
+    <script defer src="../js/logout.js"></script>
+    <script defer src="../js/bot.js"></script>
+
 </head>
 <body>
     <header>
-        <div class="profile">
-            <h2>Olá, <span id="nome-usuario">Visitante</span>!</h2>
+      <div class="logo">
+          <img src="../img/icones/arca.png" alt="Logo A.R.C.A" />
+      </div>
+
+      <div class="profile">
+        <h2>Olá, <span id="nome-usuario">Visitante</span>!</h2>
+        <div class="logout-wrapper">
+          <button id="btn-logout" class="btn-logout">Sair</button>
         </div>
-        <div class="logo">
-            <a href="../../index.html">
-                <img src="../img/icones/arca.png" alt="Logo A.R.C.A" />
-            </a>
-        </div>
+      </div>
+
         <nav class="nav-bar">
             <ul>
                 <li><a href="../../index.html">Página inicial</a></li>
                 <li><a href="../contato/contato.html">Contato</a></li>
                 <li><a href="../faq/faq.html">FAQ</a></li>
+                <li><a href="solucao.html">Solução</a></li>
             </ul>
         </nav>
     </header>
