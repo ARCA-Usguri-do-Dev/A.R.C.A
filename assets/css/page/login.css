@@ -201,3 +201,130 @@ body.login-ativo header .logo {
 body.login-ativo header {
   justify-content: center;
 }
+/* Small devices (≥600px) */
+@media (min-width: 600px) {
+  .overlay {
+    padding: 160px 0px;
+    overflow-y: auto; /* permite rolagem se precisar */
+  }
+  .box {
+    max-width: 450px;
+    padding: 28px;
+  }
+
+  .tabs button {
+    font-size: 19px;
+    padding: 12px;
+  }
+
+  .formulario input {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .formulario button {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .btn-anonimo {
+    font-size: 15px;
+  }
+}
+
+/* Medium devices (≥768px) */
+@media (min-width: 768px) {
+  .overlay {
+    padding: 180px 16px; /* menos padding vertical + espaço horizontal */
+  }
+
+  .box {
+    max-width: 540px;
+    padding: 40px 30px; /* mais espaço interno */
+  }
+
+  .tabs button {
+    font-size: 20px;
+    padding: 12px;
+  }
+
+  .formulario input,
+  .formulario button {
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .btn-anonimo {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .senha-dica {
+    font-size: 13px;
+    margin-top: -4px;
+  }
+}
+
+/* Large devices (≥992px) */
+@media (min-width: 992px) {
+  .overlay {
+    padding: 110px 0px;
+  }
+  .box {
+    max-width: 550px;
+    padding: 30px;
+  }
+
+  .tabs button {
+    font-size: 18px;
+  }
+
+  .formulario input,
+  .formulario button {
+    font-size: 15px;
+  }
+
+  .btn-anonimo {
+    font-size: 15px;
+  }
+
+  .btn-logout {
+    font-size: 12px;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+/* Extra-Large devices (≥1300px) */
+@media (min-width: 1300px) {
+  .overlay {
+    padding: 128px 0px;
+  }
+  .box {
+    max-width: 600px;
+    padding: 10px 30px;
+  }
+
+  .tabs {
+    gap: 16px;
+  }
+
+  .tabs button {
+    font-size: 20px;
+  }
+
+  .formulario input,
+  .formulario button {
+    font-size: 18px;
+  }
+
+  .btn-anonimo {
+    font-size: 16px;
+  }
+
+  .btn-logout {
+    font-size: 14px;
+    top: 13px;
+    left: 13px;
+  }
+}
