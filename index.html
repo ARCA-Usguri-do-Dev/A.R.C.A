@@ -861,30 +861,21 @@
         </form>
 
         <form id="form-cadastro" class="formulario hidden">
-          <input
-            type="text"
-            id="cad-nome"
-            placeholder="Nome"
-            required
-          />
+          <input type="text" id="cad-nome" placeholder="Nome" required/>
+          <input type="text" id="cad-cpf" placeholder="Digite seu CPF" required/>
 
           <input type="email" id="cad-email" placeholder="E-mail (opcional)" />
           <span class="erro" id="erro-email"></span>
 
           <input type="date" id="cad-nascimento" required />
-
-          <input type="password" id="cad-senha" placeholder="Senha" required />
+          <br>
           <small class="senha-dica"
             >Use pelo menos 8 caracteres com letra maiúscula, minúscula, número
-            e símbolo.</small
-          >
+            e símbolo.</small>
+          <input type="password" id="cad-senha" placeholder="Senha" required />
 
-          <input
-            type="password"
-            id="cad-senhaconf"
-            placeholder="Confirme sua Senha"
-            required
-          />
+
+          <input type="password" id="cad-senhaconf" placeholder="Confirme sua Senha" required/>
           <span class="erro" id="erro-senha"></span>
 
           <button type="submit">Cadastrar</button>

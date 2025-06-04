@@ -31,6 +31,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const senhaInput = document.getElementById("cad-senha");
   const senhaConfInput = document.getElementById("cad-senhaconf");
 
+  function limparCampos() {
+    document.getElementById("cad-nome").value = "";
+    document.getElementById("cad-email").value = "";
+    document.getElementById("cad-nascimento").value = "";
+    document.getElementById("cad-cpf").value = "";
+    document.getElementById("cad-senha").value = "";
+    document.getElementById("cad-senhaconf").value = "";
+    document.getElementById("login-usuario").value = "";
+    document.getElementById("login-senha").value = "";
+  }
+
   btnLogin.addEventListener("click", () => mostrarFormulario("login"));
   btnCadastro.addEventListener("click", () => mostrarFormulario("cadastro"));
 
@@ -79,6 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "Cadastro realizado com sucesso! Você já pode fazer login.",
       "sucesso"
     );
+    limparCampos();
     mostrarFormulario("login");
   });
 
@@ -111,6 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("tela-autenticacao").style.display = "none";
     document.body.classList.remove("login-ativo");
     exibirMensagem(`Bem-vindo ao A.R.C.A, ${usuarioDados.nome}!`, "sucesso");
+    limparCampos();
   });
 
   btnAnonimo.addEventListener("click", () => {
