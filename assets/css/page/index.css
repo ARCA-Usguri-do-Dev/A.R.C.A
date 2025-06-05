@@ -6,10 +6,9 @@ main {
   gap: 24px;
 }
 
-
 /* === Boas-vindas === */
 .container {
-  background-color: #BBDEFB;
+  background-color: #bbdefb;
   padding: 24px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(30, 58, 95, 0.2);
@@ -32,7 +31,7 @@ main {
 
 /* === Importância de estar preparado === */
 .alerta-section {
-  background-color: #E1F5FE;
+  background-color: #e1f5fe;
   padding: 24px;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(30, 58, 95, 0.15);
@@ -62,11 +61,9 @@ main {
   width: 100%;
 }
 
-
-
 /* Card individual */
 .card {
-  background-color: #E3F2FD;
+  background-color: #e3f2fd;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(30, 58, 95, 0.15);
   text-align: center;
@@ -167,7 +164,7 @@ main {
 }
 
 .card-conteudo h3 {
-  background-color: #BBDEFB;
+  background-color: #bbdefb;
   padding: 10px 16px;
   border-radius: 8px;
   font-size: 20px;
@@ -195,6 +192,7 @@ main {
   position: relative;
   padding-left: 24px;
   margin-bottom: 12px;
+  text-align: justify;
 }
 
 .card-conteudo ul li::before {
@@ -221,7 +219,7 @@ main {
   text-align: justify;
 }
 @media (min-width: 600px) {
-    main {
+  main {
     padding: 220px 20px 40px;
   }
   .home-title {
