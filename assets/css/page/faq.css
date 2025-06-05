@@ -39,7 +39,6 @@ main {
   margin: auto;
 }
 
-
 .faq {
   margin-bottom: 16px;
   border-radius: 12px;
@@ -70,7 +69,6 @@ main {
 .faq h3:hover {
   transform: scale(1.08);
 }
-
 
 .faq p {
   display: none;

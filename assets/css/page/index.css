@@ -130,7 +130,8 @@ main {
   width: 100%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Tom mais escuro dá mais profundidade */
   color: #0d355f;
-  font-family: "Bangers", system-ui, "Roboto", Arial, sans-serif;
+  font-family: "Atkinson Hyperlegible", "Source Sans Pro", "Roboto", Arial,
+    sans-serif;
   font-size: 16px;
   line-height: 1.7;
   overflow-y: auto;

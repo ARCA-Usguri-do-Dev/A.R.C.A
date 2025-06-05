@@ -1,104 +1,105 @@
 main#principal {
-    z-index: 1;
+  z-index: 1;
 }
 
-
 .overlay {
-    position: fixed;
-    inset: 0;
-    background: linear-gradient(to bottom, #83a4d4, #87c8e0);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 150px;
-    z-index: 10;
-
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(to bottom, #83a4d4, #87c8e0);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 150px;
+  z-index: 10;
 }
 
 .box {
-    background: white;
-    color: #333;
-    border-radius: 12px;
-    padding: 30px;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  background: white;
+  color: #333;
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-
 .tabs {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .tabs button {
-    margin: 10px;
-    flex: 1;
-    padding: 10px;
-    text-align: center;
-    font-size: 18px;
-    background: #87c8e0;
-    color: #000;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+  margin: 10px;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  background: #87c8e0;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 .tabs button:hover {
-    background: #83a4d4;
+  background: #83a4d4;
 }
 
-
 .formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .formulario input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 14px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
 }
 
 .formulario button {
-    padding: 10px;
-    background: #87c8e0;
-    color: #000;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s;
+  padding: 10px;
+  background: #87c8e0;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
 .formulario button:hover {
-    background: #83a4d4;
+  background: #83a4d4;
 }
 
+label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+}
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .btn-anonimo {
-    margin-top: 10px;
-    padding: 10px;
-    background: transparent;
-    color: #333;
-    border: 2px dashed #83a4d4;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
+  margin-top: 10px;
+  padding: 10px;
+  background: transparent;
+  color: #333;
+  border: 2px dashed #83a4d4;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 .btn-anonimo:hover {
-    background: #e3f2fd;
+  background: #e3f2fd;
 }
 .logout-wrapper {
   margin-top: 6px;
@@ -260,7 +261,7 @@ body.login-ativo header {
   }
 
   .senha-dica {
-    font-size: 13px;
+    font-size: 12px;
     margin-top: -4px;
   }
 }

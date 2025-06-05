@@ -6,9 +6,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/page/login.css" />
@@ -628,71 +629,71 @@
 
     <div class="overlay" id="tela-autenticacao">
       <div class="box">
-      <div class="tabs">
-      <button id="btn-login">Login</button>
-      <button id="btn-cadastro">Cadastro</button>
+        <div class="tabs">
+          <button id="btn-login">Login</button>
+          <button id="btn-cadastro">Cadastro</button>
+        </div>
+
+        <!-- Formulário de Login -->
+        <form id="form-login" class="formulario">
+          <label for="login-usuario">Nome de Usuário</label>
+          <input type="text" id="login-usuario" placeholder="Nome" required />
+
+          <label for="login-senha">Senha</label>
+          <input
+            type="password"
+            id="login-senha"
+            placeholder="Senha"
+            required
+          />
+
+          <button type="submit">Entrar</button>
+        </form>
+
+        <!-- Formulário de Cadastro -->
+        <form id="form-cadastro" class="formulario hidden">
+          <label for="cad-nome">Nome</label>
+          <input type="text" id="cad-nome" placeholder="Nome" required />
+
+          <label for="cad-cpf">CPF</label>
+          <input
+            type="text"
+            id="cad-cpf"
+            placeholder="Digite seu CPF"
+            required
+          />
+
+          <label for="cad-email">E-mail (opcional)</label>
+          <input type="email" id="cad-email" placeholder="E-mail (opcional)" />
+          <span class="erro" id="erro-email"></span>
+
+          <label for="cad-nascimento">Data de Nascimento</label>
+          <input type="date" id="cad-nascimento" required />
+
+          <label for="cad-senha">Senha</label>
+          <input type="password" id="cad-senha" placeholder="Senha" required />
+
+          <small class="senha-dica">
+            Use pelo menos 8 caracteres com letra maiúscula, minúscula, número e
+            símbolo.
+          </small>
+          <label for="cad-senhaconf">Confirme sua Senha</label>
+          <input
+            type="password"
+            id="cad-senhaconf"
+            placeholder="Confirme sua Senha"
+            required
+          />
+          <span class="erro" id="erro-senha"></span>
+
+          <button type="submit">Cadastrar</button>
+        </form>
+
+        <button id="btn-anonimo" class="btn-anonimo">
+          Entrar como Visitante
+        </button>
       </div>
-       
-          <!-- Formulário de Login -->
-      <form id="form-login" class="formulario">
-      <label for="login-usuario">Nome de Usuário</label>
-      <input
-              type="text"
-              id="login-usuario"
-              placeholder="Nome"
-              required
-            />
-       
-            <label for="login-senha">Senha</label>
-      <input
-              type="password"
-              id="login-senha"
-              placeholder="Senha"
-              required
-            />
-       
-            <button type="submit">Entrar</button>
-      </form>
-       
-          <!-- Formulário de Cadastro -->
-      <form id="form-cadastro" class="formulario hidden">
-      <label for="cad-nome">Nome</label>
-      <input type="text" id="cad-nome" placeholder="Nome" required />
-       
-            <label for="cad-cpf">CPF</label>
-      <input type="text" id="cad-cpf" placeholder="Digite seu CPF" required />
-       
-            <label for="cad-email">E-mail (opcional)</label>
-      <input type="email" id="cad-email" placeholder="E-mail (opcional)" />
-      <span class="erro" id="erro-email"></span>
-       
-            <label for="cad-nascimento">Data de Nascimento</label>
-      <input type="date" id="cad-nascimento" required />
-       
-            <small class="senha-dica">
-              Use pelo menos 8 caracteres com letra maiúscula, minúscula, número e símbolo.
-      </small>
-       
-            <label for="cad-senha">Senha</label>
-      <input type="password" id="cad-senha" placeholder="Senha" required />
-       
-            <label for="cad-senhaconf">Confirme sua Senha</label>
-      <input
-              type="password"
-              id="cad-senhaconf"
-              placeholder="Confirme sua Senha"
-              required
-            />
-      <span class="erro" id="erro-senha"></span>
-       
-            <button type="submit">Cadastrar</button>
-      </form>
-       
-          <button id="btn-anonimo" class="btn-anonimo">
-            Entrar como Visitante
-      </button>
-      </div>
-      </div>
+    </div>
 
     <footer class="footer">
       <div class="footer-container">
